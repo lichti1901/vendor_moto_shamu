@@ -424,3 +424,7 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/vendor/moto/audiomonitor/sensory/svsid_triggerogn_enus_3_1.raw:system/vendor/moto/audiomonitor/sensory/svsid_triggerogn_enus_3_1.raw:moto \
     vendor/moto/shamu/vendor/moto/audiomonitor/sensory/svsid_triggerogn_frfr_1_0.raw:system/vendor/moto/audiomonitor/sensory/svsid_triggerogn_frfr_1_0.raw:moto \
     vendor/moto/shamu/vendor/moto/audiomonitor/sensory/svsid_triggerogn_ptbr_2_1.raw:system/vendor/moto/audiomonitor/sensory/svsid_triggerogn_ptbr_2_1.raw:moto 
+    
+    #missing file for always listening google now
+    PRODUCT_COPY_FILES := \
+    vendor/moto/shamu/lib/libtrainingcheck.so:system/lib/libtrainingcheck.so:moto \
