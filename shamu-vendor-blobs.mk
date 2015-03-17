@@ -427,4 +427,4 @@ PRODUCT_COPY_FILES := \
     
     #missing file for always listening google now
     PRODUCT_COPY_FILES := \
-    vendor/moto/shamu/lib/libtrainingcheck.so:system/lib/libtrainingcheck.so:moto \
+    vendor/moto/shamu/lib/libtrainingcheck.so:system/lib/libtrainingcheck.so:moto 
