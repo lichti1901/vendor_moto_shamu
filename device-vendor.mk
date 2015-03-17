@@ -16,7 +16,8 @@ $(call inherit-product, vendor/moto/shamu/shamu-vendor-blobs.mk)
 
 # Prebuilt APKs
     PRODUCT_PACKAGES += \
-    TimeService
+    TimeService \
+    BuaContactAdapter
     
 # Prebuilt jars
     PRODUCT_PACKAGES += \
