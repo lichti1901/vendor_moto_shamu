@@ -427,4 +427,70 @@ PRODUCT_COPY_FILES := \
     
     #missing file for always listening google now
     PRODUCT_COPY_FILES := \
-    vendor/moto/shamu/lib/libtrainingcheck.so:system/lib/libtrainingcheck.so:moto 
+    vendor/moto/shamu/lib/libtrainingcheck.so:system/lib/libtrainingcheck.so:moto \
+    vendor/moto/shamu/etc/permissions/com.motorola.triggerenroll.xml:system/etc/permissions/com.motorola.triggerenroll.xml:moto 
+    
+    #missing vendor firmware files
+    PRODUCT_COPY_FILES := \
+    vendor/moto/shamu/vendor/firmware/cy8c20247_24lkxi.hex:system/vendor/firmware/cy8c20247_24lkxi.hex:moto \
+    vendor/moto/shamu/vendor/firmware/left.boost.music.config:system/vendor/firmware/left.boost.music.config:moto \
+    vendor/moto/shamu/vendor/firmware/left.boost.ringtone.config:system/vendor/firmware/left.boost.ringtone.config:moto \
+    vendor/moto/shamu/vendor/firmware/left.boost.voice.config:system/vendor/firmware/left.boost.voice.config:moto \
+    vendor/moto/shamu/vendor/firmware/right.boost.music.config:system/vendor/firmware/right.boost.music.config:moto \
+    vendor/moto/shamu/vendor/firmware/right.boost.ringtone.config:system/vendor/firmware/right.boost.ringtone.config:moto \
+    vendor/moto/shamu/vendor/firmware/right.boost.voice.config:system/vendor/firmware/right.boost.voice.config:moto 
+    
+    #missing vendor lib
+    PRODUCT_COPY_FILES := \
+    vendor/moto/shamu/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so:moto \
+    vendor/moto/shamu/vendor/lib/lib-ims-setting-jni.so:system/vendor/lib/lib-ims-setting-jni:moto \
+    vendor/moto/shamu/vendor/lib/lib-ims-settings.so:system/vendor/lib/lib-ims-settings.so:moto \
+    vendor/moto/shamu/vendor/lib/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so:moto \
+    vendor/moto/shamu/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so:moto \
+    vendor/moto/shamu/vendor/lib/lib-imsrcs.so:system/vendor/lib/lib-imsrcs.so:moto \
+    vendor/moto/shamu/vendor/lib/lib-imss.so:system/vendor/lib/lib-imsSDP.so:moto \
+    vendor/moto/shamu/vendor/lib/lib-imsvt.so:system/vendor/lib/lib-imsvt.so:moto \
+    vendor/moto/shamu/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so:moto \
+    vendor/moto/shamu/vendor/lib/lib-rcsimssjni.so:system/vendor/lib/lib-rcsimssjni.so:moto \
+    vendor/moto/shamu/vendor/lib/lib-rcsjni.so:system/vendor/lib/lib-rcsjni.so:moto \
+    vendor/moto/shamu/vendor/lib/lib-rtpcommon.so:system/vendor/lib/lib-rtpcommon.so:moto \
+    vendor/moto/shamu/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so:moto \
+    vendor/moto/shamu/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so:moto \
+    vendor/moto/shamu/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so:moto \
+    vendor/moto/shamu/vendor/lib/libchromatix_imx214_cpp_snap.so:system/vendor/lib/libchromatix_imx214_cpp_snap.so:moto \
+    vendor/moto/shamu/vendor/lib/libfrsdk.so:system/vendor/lib/libfrsdk.so:moto \
+    vendor/moto/shamu/vendor/lib/libssd.so:system/vendor/lib/libssd.so:moto \
+    vendor/moto/shamu/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so:moto \
+    
+    #drm files
+    PRODUCT_COPY_FILES := \
+    vendor/moto/shamu/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so:moto \
+    vendor/moto/shamu/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so:moto \
+    vendor/moto/shamu/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so:moto \
+    vendor/moto/shamu/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so:moto \
+
+    #missing audio libs
+    PRODUCT_COPY_FILES := \
+    vendor/moto/shamu/lib/hw/audio.motvr.default.so:system/lib/hw/audio.motvr.default.so:moto \
+    vendor/moto/shamu/lib/libmotaudioutils.so:system/lib/libmotaudioutils.so:moto \
+    vendor/moto/shamu/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so:moto \
+    vendor/moto/shamu/etc/diag/audio_voice_apr.cfg:system/etc/diag/audio_voice_apr.cfg:moto \
+    vendor/moto/shamu/etc/diag/voice-call-min-log.cfg:system/etc/diag/voice-call-min-log.cfg:moto 
+    
+    #missing permissions from 47e image
+    PRODUCT_COPY_FILES := \
+    vendor/moto/shamu/etc/permissions/com.android.omadm.service.xml:system/etc/permissions/com.android.omadm.service.xml:moto \
+    vendor/moto/shamu/etc/permissions/com.motorola.DirectedSMSProxy.xml:system/etc/permissions/com.motorola.DirectedSMSProxy.xml:moto \
+    vendor/moto/shamu/etc/permissions/com.verizon.hardware.telephony.ehrpd.xml:system/etc/permissions/com.verizon.hardware.telephony.ehrpd.xml:moto \
+    vendor/moto/shamu/etc/permissions/com.verizon.hardware.telephony.lte.xml:system/etc/permissions/com.verizon.hardware.telephony.lte.xml:moto \
+    vendor/moto/shamu/etc/permissions/com.motorola.ims.rcsmanager.xml:system/etc/permissions/com.motorola.ims.rcsmanager.xml:moto \
+    vendor/moto/shamu/etc/permissions/com.verizon.ims.xml:system/etc/permissions/com.verizon.ims.xml:moto \
+    vendor/moto/shamu/etc/permissions/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml:moto \
+    vendor/moto/shamu/etc/permissions/rcsimssettings.xml:system/etc/permissions/rcsimssettings.xml:moto \
+    vendor/moto/shamu/etc/permissions/rcsservice.xml:system/etc/permissions/rcsservice.xml:moto \
+    
+    #Want to use the audio effects out of factory image for fmas
+    PRODUCT_COPY_FILES := \
+    vendor/moto/shamu/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf:moto 
+    
+    
