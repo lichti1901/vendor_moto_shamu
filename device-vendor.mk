@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_STEM := shamu/shamu-vendor-blobs.mk
+LOCAL_STEM := vendor/moto/shamu/device-partial.mk
 
 #fmas n6 specific
     PRODUCT_PROPERTY_OVERRIDES += \
@@ -53,4 +53,4 @@ LOCAL_STEM := shamu/shamu-vendor-blobs.mk
     MotoSignatureApp \
     VZWAPNService
     
-$(call inherit-product-if-exists, vendor/moto/$(LOCAL_STEM))
+$(call inherit-product, vendor/moto/shamu/device-partial.mk)
