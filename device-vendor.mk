@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, vendor/moto/shamu/shamu-vendor-blobs.mk)
 
 #fmas n6 specific
     PRODUCT_PROPERTY_OVERRIDES += \
@@ -52,3 +51,5 @@ $(call inherit-product, vendor/moto/shamu/shamu-vendor-blobs.mk)
     AppDirectedSMSProxy \
     MotoSignatureApp \
     VZWAPNService
+    
+-include vendor/moto/shamu-vendor-blobs.mk
