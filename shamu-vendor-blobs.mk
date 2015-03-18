@@ -506,7 +506,7 @@ PRODUCT_COPY_FILES := \
     #missing framework
     PRODUCT_COPY_FILES := \
     vendor/moto/shamu/framework/com.motorola.ims.rcsmanager.jar:system/framework/com.motorola.ims.rcsmanager.jar:moto \
-    vendor/moto/shamu/framework/com.verizon.hardware.telephony.ehrpd:system/framework/com.verizon.hardware.telephony.ehrpd.jar:moto \
+    vendor/moto/shamu/framework/com.verizon.hardware.telephony.ehrpd.jar:system/framework/com.verizon.hardware.telephony.ehrpd.jar:moto \
     vendor/moto/shamu/framework/com.verizon.hardware.telephony.lte.jar:system/framework/com.verizon.hardware.telephony.lte.jar:moto \
     vendor/moto/shamu/framework/com.verizon.ims:system/framework/com.verizon.ims.jar:moto \
     vendor/moto/shamu/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar:moto \
