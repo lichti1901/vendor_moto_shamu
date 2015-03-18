@@ -14,6 +14,5 @@
 
 LOCAL_STEM := shamu/BoardConfigPartial.mk
 
--include vendor/broadcom/$(LOCAL_STEM)
 -include vendor/moto/$(LOCAL_STEM)
--include vendor/qcom/$(LOCAL_STEM)
+
