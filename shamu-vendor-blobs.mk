@@ -460,7 +460,7 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/vendor/lib/libchromatix_imx214_cpp_snap.so:system/vendor/lib/libchromatix_imx214_cpp_snap.so:moto \
     vendor/moto/shamu/vendor/lib/libfrsdk.so:system/vendor/lib/libfrsdk.so:moto \
     vendor/moto/shamu/vendor/lib/libssd.so:system/vendor/lib/libssd.so:moto \
-    vendor/moto/shamu/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so:moto \
+    vendor/moto/shamu/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so:moto 
     
     #drm files
     PRODUCT_COPY_FILES := \
@@ -468,6 +468,9 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so:moto \
     vendor/moto/shamu/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so:moto \
     vendor/moto/shamu/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so:moto \
+    vendor/moto/shamu/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so:moto \
+    vendor/moto/shamu/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so:moto \
+    vendor/moto/shamu/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so:moto 
 
     #missing audio libs
     PRODUCT_COPY_FILES := \
@@ -487,10 +490,26 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/etc/permissions/com.verizon.ims.xml:system/etc/permissions/com.verizon.ims.xml:moto \
     vendor/moto/shamu/etc/permissions/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml:moto \
     vendor/moto/shamu/etc/permissions/rcsimssettings.xml:system/etc/permissions/rcsimssettings.xml:moto \
-    vendor/moto/shamu/etc/permissions/rcsservice.xml:system/etc/permissions/rcsservice.xml:moto \
+    vendor/moto/shamu/etc/permissions/rcsservice.xml:system/etc/permissions/rcsservice.xml:moto 
     
     #Want to use the audio effects out of factory image for fmas
     PRODUCT_COPY_FILES := \
     vendor/moto/shamu/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf:moto 
+    
+    #missing bins
+    PRODUCT_COPY_FILES := \
+    vendor/moto/shamu/bin/ATFWD-daemon:system/bin/ATFWD-daemon:qcom \
+    vendor/moto/shamu/bin/imsdatadaemon:system/bin/imsdatadaemon:qcom \
+    vendor/moto/shamu/bin/imsqmidaemon:system/bin/imsqmidaemon:qcom \
+    vendor/moto/shamu/bin/mdm_helper_proxy:system/bin/mdm_helper_proxy:qcom 
+    
+    #missing framework
+    PRODUCT_COPY_FILES := \
+    vendor/moto/shamu/framework/com.motorola.ims.rcsmanager.jar:system/framework/com.motorola.ims.rcsmanager.jar:moto \
+    vendor/moto/shamu/framework/com.verizon.hardware.telephony.ehrpd:system/framework/com.verizon.hardware.telephony.ehrpd.jar:moto \
+    vendor/moto/shamu/framework/com.verizon.hardware.telephony.lte.jar:system/framework/com.verizon.hardware.telephony.lte.jar:moto \
+    vendor/moto/shamu/framework/com.verizon.ims:system/framework/com.verizon.ims.jar:moto \
+    vendor/moto/shamu/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar:moto \
+    vendor/moto/shamu/framework/rcsservice.jar:system/framework/rcsservice.jar:moto 
     
     

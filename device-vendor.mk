@@ -14,16 +14,41 @@
 
 $(call inherit-product, vendor/moto/shamu/shamu-vendor-blobs.mk)
 
+#fmas n6 specific
+    PRODUCT_PROPERTY_OVERRIDES += \
+    fmas.spkr_6ch=35,20,110 \
+    fmas.spkr_2ch=35,25 \
+    fmas.spkr_angles=10 \
+    fmas.spkr_sgain=0 \
+    media.aac_51_output_enabled=true \
+    persist.rcs.supported=0 \
+    persist.radio.sib16_support=1
+
 # Prebuilt APKs
     PRODUCT_PACKAGES += \
     TimeService \
-    BuaContactAdapter
+    BuaContactAdapter \
+    ims \
+    RCSBootstraputil \
+    RcsImsBootstraputil \
+    RcsService \
+    VZWAPNLib
     
 # Prebuilt jars
     PRODUCT_PACKAGES += \
-    org.simalliance.openmobileapi
+    org.simalliance.openmobileapi \
+    com.motorola.ims.rcsmanager \
+    com.verizon.hardware.telephony.ehrpd \
+    com.verizon.hardware.telephony.lte \
+    com.verizon.ims \
+    rcsimssettings \
+    rcsservice
     
 # Prebuilt privileged APKs
-     PRODUCT_PACKAGES += \
-       TriggerEnroll \
-       TriggerTrainingService
+    PRODUCT_PACKAGES += \
+    TriggerEnroll \
+    TriggerTrainingService \
+    appdirectedsmspermission \
+    AppDirectedSMSProxy \
+    MotoSignatureApp \
+    VZWAPNService
