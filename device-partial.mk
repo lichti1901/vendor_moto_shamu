@@ -13,13 +13,13 @@
 # limitations under the License.
 
 # Broadcom blob(s) necessary for Shamu hardware
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
     vendor/moto/shamu/vendor/firmware/bcm20795_firmware.ncd:system/vendor/firmware/bcm20795_firmware.ncd:broadcom \
     vendor/moto/shamu/vendor/firmware/bcm4354A2.hcd:system/vendor/firmware/bcm4354A2.hcd:broadcom \
     vendor/moto/shamu/xbin/wlutil:system/xbin/wlutil:broadcom 
     
 # Qualcomm blob(s) necessary for Shamu hardware
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
     vendor/moto/shamu/bin/bridgemgrd:system/bin/bridgemgrd:qcom \
     vendor/moto/shamu/bin/diag_klog:system/bin/diag_klog:qcom \
     vendor/moto/shamu/bin/diag_mdlog:system/bin/diag_mdlog:qcom \
@@ -59,7 +59,7 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/bin/usbhub_init:system/bin/usbhub_init:qcom 
     
     # Qualcomm etc 
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw:qcom \
     vendor/moto/shamu/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw:qcom \
     vendor/moto/shamu/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw:qcom \
@@ -71,7 +71,7 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/etc/thermal-engine-shamu.conf:system/etc/thermal-engine-shamu.conf:qcom 
     
     # Qualcomm lib
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/lib/hw/audio.primary.msm8084.so:system/lib/hw/audio.primary.msm8084.so:qcom \
     vendor/moto/shamu/lib/hw/gps.msm8084.so:system/lib/hw/gps.msm8084.so:qcom \
     vendor/moto/shamu/lib/hw/sound_trigger.primary.shamu.so:system/lib/hw/sound_trigger.primary.shamu.so:qcom \
@@ -89,7 +89,7 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/lib/libtinycompress.so:system/lib/libtinycompress.so:qcom 
     
     #Qualcomm vendor firmware
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/vendor/firmware/a420_pfp.fw:system/vendor/firmware/a420_pfp.fw:qcom \
     vendor/moto/shamu/vendor/firmware/a420_pm4.fw:system/vendor/firmware/a420_pm4.fw:qcom \
     vendor/moto/shamu/vendor/firmware/adsp.b00:system/vendor/firmware/adsp.b00:qcom \
@@ -125,7 +125,7 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/vendor/firmware/widevine.mdt:system/vendor/firmware/widevine.mdt:qcom 
     
     #qcom vendor/lib/egl
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so:qcom \
     vendor/moto/shamu/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so:qcom \
     vendor/moto/shamu/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so:qcom \
@@ -134,13 +134,13 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so:qcom 
     
     #qcom vendor/lib/hw
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/vendor/lib/hw/activity_recognition.msm8084.so:system/vendor/lib/hw/activity_recognition.msm8084.so:qcom \
     vendor/moto/shamu/vendor/lib/hw/flp.msm8084.so:system/vendor/lib/hw/flp.msm8084.so:qcom \
     vendor/moto/shamu/vendor/lib/hw/sensors.msm8084.so:system/vendor/lib/hw/sensors.msm8084.so:qcom 
     
     #qcom vendor/lib
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so:qcom \
     vendor/moto/shamu/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so:qcom \
     vendor/moto/shamu/vendor/lib/libactuator_lc898122_camcorder.so:system/vendor/lib/libactuator_lc898122_camcorder.so:qcom \
@@ -310,13 +310,13 @@ PRODUCT_COPY_FILES := \
     
 #Motorola binaries
     #bin
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/bin/adspd:system/bin/adspd:moto \
     vendor/moto/shamu/bin/ramdump:system/bin/ramdump:moto \
     vendor/moto/shamu/bin/tcmd_mini:system/bin/tcmd_mini:moto
     
     #etc
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/etc/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb:moto \
     vendor/moto/shamu/etc/diag/mdm/FIT_V15_audio.cfg:system/etc/diag/mdm/FIT_V15_audio.cfg:moto \
     vendor/moto/shamu/etc/diag/mdm/FIT_V15.cfg:system/etc/diag/mdm/FIT_V15.cfg:moto \
@@ -346,18 +346,18 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb:moto 
     
     #qcom framework
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/framework/org.simalliance.openmobileapi.jar:system/framework/org.simalliance.openmobileapi.jar:moto 
     
     #qcom lib
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/lib/libadspd-jni.so:system/lib/libadspd-jni.so:moto \
     vendor/moto/shamu/lib/libadspd.so:system/lib/libadspd.so:moto \
     vendor/moto/shamu/lib/librecoglib.so:system/lib/librecoglib.so:moto \
     vendor/moto/shamu/lib/libsupermodel.so:system/lib/libsupermodel.so:moto 
     
     
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/vendor/firmware/acdb.mbn:system/vendor/firmware/acdb.mbn:moto \
     vendor/moto/shamu/vendor/firmware/atmel-a432-14061601-0102aa-shamu-p1.tdat:system/vendor/firmware/atmel-a432-14061601-0102aa-shamu-p1.tdat:moto \
     vendor/moto/shamu/vendor/firmware/atmel-a432-14103001-0103aa-shamu.tdat:system/vendor/firmware/atmel-a432-14103001-0103aa-shamu.tdat:moto \
@@ -382,13 +382,13 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/vendor/firmware/VRGain.bin:system/vendor/firmware/VRGain.bin:moto 
     
     #moto vendor lib
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/vendor/lib/libmdmcutback.so:system/vendor/lib/libmdmcutback.so:moto \
     vendor/moto/shamu/vendor/lib/libmotext_inf.so:system/vendor/lib/libmotext_inf.so:moto \
     vendor/moto/shamu/vendor/lib/libqmimotext.so:system/vendor/lib/libqmimotext.so:moto 
     
     #moto audio monitor files
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/vendor/moto/audiomonitor/sensory/lts_en_us_9_5_2b.raw:system/vendor/moto/audiomonitor/sensory/lts_en_us_9_5_2b.raw:moto \
     vendor/moto/shamu/vendor/moto/audiomonitor/sensory/nn_de_mfcc_16k_15_big_250_v3_4.raw:system/vendor/moto/audiomonitor/sensory/nn_de_mfcc_16k_15_big_250_v3_4.raw:moto \
     vendor/moto/shamu/vendor/moto/audiomonitor/sensory/nn_en_uk_mfcc_16k_15_big_250_v2_2.raw:system/vendor/moto/audiomonitor/sensory/nn_en_uk_mfcc_16k_15_big_250_v2_2.raw:moto \
@@ -426,12 +426,12 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/vendor/moto/audiomonitor/sensory/svsid_triggerogn_ptbr_2_1.raw:system/vendor/moto/audiomonitor/sensory/svsid_triggerogn_ptbr_2_1.raw:moto 
     
     #missing file for always listening google now
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/lib/libtrainingcheck.so:system/lib/libtrainingcheck.so:moto \
     vendor/moto/shamu/etc/permissions/com.motorola.triggerenroll.xml:system/etc/permissions/com.motorola.triggerenroll.xml:moto 
     
     #missing vendor firmware files
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/vendor/firmware/cy8c20247_24lkxi.hex:system/vendor/firmware/cy8c20247_24lkxi.hex:moto \
     vendor/moto/shamu/vendor/firmware/left.boost.music.config:system/vendor/firmware/left.boost.music.config:moto \
     vendor/moto/shamu/vendor/firmware/left.boost.ringtone.config:system/vendor/firmware/left.boost.ringtone.config:moto \
@@ -441,7 +441,7 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/vendor/firmware/right.boost.voice.config:system/vendor/firmware/right.boost.voice.config:moto 
     
     #missing vendor lib
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so:moto \
     vendor/moto/shamu/vendor/lib/lib-ims-setting-jni.so:system/vendor/lib/lib-ims-setting-jni:moto \
     vendor/moto/shamu/vendor/lib/lib-ims-settings.so:system/vendor/lib/lib-ims-settings.so:moto \
@@ -463,7 +463,7 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so:moto 
     
     #drm files
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so:moto \
     vendor/moto/shamu/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so:moto \
     vendor/moto/shamu/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so:moto \
@@ -473,7 +473,7 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so:moto 
 
     #missing audio libs
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/lib/hw/audio.motvr.default.so:system/lib/hw/audio.motvr.default.so:moto \
     vendor/moto/shamu/lib/libmotaudioutils.so:system/lib/libmotaudioutils.so:moto \
     vendor/moto/shamu/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so:moto \
@@ -481,7 +481,7 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/etc/diag/voice-call-min-log.cfg:system/etc/diag/voice-call-min-log.cfg:moto 
     
     #missing permissions from 47e image
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/etc/permissions/com.android.omadm.service.xml:system/etc/permissions/com.android.omadm.service.xml:moto \
     vendor/moto/shamu/etc/permissions/com.motorola.DirectedSMSProxy.xml:system/etc/permissions/com.motorola.DirectedSMSProxy.xml:moto \
     vendor/moto/shamu/etc/permissions/com.verizon.hardware.telephony.ehrpd.xml:system/etc/permissions/com.verizon.hardware.telephony.ehrpd.xml:moto \
@@ -493,18 +493,18 @@ PRODUCT_COPY_FILES := \
     vendor/moto/shamu/etc/permissions/rcsservice.xml:system/etc/permissions/rcsservice.xml:moto 
     
     #Want to use the audio effects out of factory image for fmas
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf:moto 
     
     #missing bins
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/bin/ATFWD-daemon:system/bin/ATFWD-daemon:qcom \
     vendor/moto/shamu/bin/imsdatadaemon:system/bin/imsdatadaemon:qcom \
     vendor/moto/shamu/bin/imsqmidaemon:system/bin/imsqmidaemon:qcom \
     vendor/moto/shamu/bin/mdm_helper_proxy:system/bin/mdm_helper_proxy:qcom 
     
     #missing framework
-    PRODUCT_COPY_FILES := \
+    PRODUCT_COPY_FILES += \
     vendor/moto/shamu/framework/com.motorola.ims.rcsmanager.jar:system/framework/com.motorola.ims.rcsmanager.jar:moto \
     vendor/moto/shamu/framework/com.verizon.hardware.telephony.ehrpd.jar:system/framework/com.verizon.hardware.telephony.ehrpd.jar:moto \
     vendor/moto/shamu/framework/com.verizon.hardware.telephony.lte.jar:system/framework/com.verizon.hardware.telephony.lte.jar:moto \
