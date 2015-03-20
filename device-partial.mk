@@ -479,7 +479,7 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so:moto \
     vendor/moto/shamu/etc/diag/audio_voice_apr.cfg:system/etc/diag/audio_voice_apr.cfg:moto \
     vendor/moto/shamu/etc/diag/voice-call-min-log.cfg:system/etc/diag/voice-call-min-log.cfg:moto \
-    vendor/motorola/shamu/proprietary/lib/libflacencoder.so:system/lib/libflacencoder.so \
+    vendor/moto/shamu/lib/libflacencoder.so:system/lib/libflacencoder.so \
     
     #missing permissions from 47e image
     PRODUCT_COPY_FILES += \
