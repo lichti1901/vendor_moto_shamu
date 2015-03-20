@@ -27,7 +27,6 @@ LOCAL_STEM := vendor/moto/shamu/device-partial.mk
 # Prebuilt APKs
     PRODUCT_PACKAGES += \
     TimeService \
-    BuaContactAdapter \
     ims \
     RCSBootstraputil \
     RcsImsBootstraputil \
@@ -51,6 +50,7 @@ LOCAL_STEM := vendor/moto/shamu/device-partial.mk
     appdirectedsmspermission \
     AppDirectedSMSProxy \
     MotoSignatureApp \
-    VZWAPNService
+    VZWAPNService \
+    BuaContactAdapter \
     
 $(call inherit-product, vendor/moto/shamu/device-partial.mk)
