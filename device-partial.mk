@@ -513,4 +513,12 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar:moto \
     vendor/moto/shamu/framework/rcsservice.jar:system/framework/rcsservice.jar:moto 
     
+    #whoops, missed the keymaster files
+    PRODUCT_COPY_FILES += \
+    vendor/moto/shamu/vendor/firmware/keymaster.b00:system/vendor/firmware/keymaster.b00:moto \
+    vendor/moto/shamu/vendor/firmware/keymaster.b01:system/vendor/firmware/keymaster.b01:moto \
+    vendor/moto/shamu/vendor/firmware/keymaster.b02:system/vendor/firmware/keymaster.b02:moto \
+    vendor/moto/shamu/vendor/firmware/keymaster.b03:system/vendor/firmware/keymaster.b03:moto \
+    vendor/moto/shamu/vendor/firmware/keymaster.mdt:system/vendor/firmware/keymaster.mdt:moto \
+    
     
