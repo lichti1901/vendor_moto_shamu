@@ -107,11 +107,11 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/vendor/firmware/adsp.mdt:system/vendor/firmware/adsp.mdt:qcom \
     vendor/moto/shamu/vendor/firmware/aonvr1.bin:system/vendor/firmware/aonvr1.bin:qcom \
     vendor/moto/shamu/vendor/firmware/aonvr2.bin:system/vendor/firmware/aonvr2.bin:qcom \
-    vendor/moto/shamu/vendor/firmware/keymaster.b00:system/vendor/firmware/keymaster/keymaster.b00:qcom \
-    vendor/moto/shamu/vendor/firmware/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01:qcom \
-    vendor/moto/shamu/vendor/firmware/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02:qcom \
-    vendor/moto/shamu/vendor/firmware/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03:qcom \
-    vendor/moto/shamu/vendor/firmware/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt:qcom \
+    vendor/moto/shamu/vendor/firmware/keymaster/keymaster.b00:system/vendor/firmware/keymaster/keymaster.b00:moto \
+    vendor/moto/shamu/vendor/firmware/keymaster/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01:moto \
+    vendor/moto/shamu/vendor/firmware/keymaster/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02:moto \
+    vendor/moto/shamu/vendor/firmware/keymaster/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03:moto \
+    vendor/moto/shamu/vendor/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt:moto \
     vendor/moto/shamu/vendor/firmware/venus.b00:system/vendor/firmware/venus.b00:qcom \
     vendor/moto/shamu/vendor/firmware/venus.b01:system/vendor/firmware/venus.b01:qcom \
     vendor/moto/shamu/vendor/firmware/venus.b02:system/vendor/firmware/venus.b02:qcom \
@@ -512,13 +512,5 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/framework/com.verizon.ims.jar:system/framework/com.verizon.ims.jar:moto \
     vendor/moto/shamu/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar:moto \
     vendor/moto/shamu/framework/rcsservice.jar:system/framework/rcsservice.jar:moto 
-    
-    #whoops, missed the keymaster files
-    PRODUCT_COPY_FILES += \
-    vendor/moto/shamu/vendor/firmware/keymaster/keymaster.b00:system/vendor/firmware/keymaster/keymaster.b00:moto \
-    vendor/moto/shamu/vendor/firmware/keymaster/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01:moto \
-    vendor/moto/shamu/vendor/firmware/keymaster/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02:moto \
-    vendor/moto/shamu/vendor/firmware/keymaster/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03:moto \
-    vendor/moto/shamu/vendor/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt:moto \
     
     
