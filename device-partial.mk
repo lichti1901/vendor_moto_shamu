@@ -515,10 +515,10 @@ PRODUCT_COPY_FILES += \
     
     #whoops, missed the keymaster files
     PRODUCT_COPY_FILES += \
-    vendor/moto/shamu/vendor/firmware/keymaster.b00:system/vendor/firmware/keymaster.b00:moto \
-    vendor/moto/shamu/vendor/firmware/keymaster.b01:system/vendor/firmware/keymaster.b01:moto \
-    vendor/moto/shamu/vendor/firmware/keymaster.b02:system/vendor/firmware/keymaster.b02:moto \
-    vendor/moto/shamu/vendor/firmware/keymaster.b03:system/vendor/firmware/keymaster.b03:moto \
-    vendor/moto/shamu/vendor/firmware/keymaster.mdt:system/vendor/firmware/keymaster.mdt:moto \
+    vendor/moto/shamu/vendor/firmware/keymaster/keymaster.b00:system/vendor/firmware/keymaster/keymaster.b00:moto \
+    vendor/moto/shamu/vendor/firmware/keymaster/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01:moto \
+    vendor/moto/shamu/vendor/firmware/keymaster/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02:moto \
+    vendor/moto/shamu/vendor/firmware/keymaster/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03:moto \
+    vendor/moto/shamu/vendor/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt:moto \
     
     
