@@ -343,7 +343,8 @@ PRODUCT_COPY_FILES += \
     vendor/moto/shamu/etc/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb:moto \
     vendor/moto/shamu/etc/Headset_cal.acdb:system/etc/Headset_cal.acdb:moto \
     vendor/moto/shamu/etc/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml:moto \
-    vendor/moto/shamu/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb:moto 
+    vendor/moto/shamu/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb:moto \
+    vendor/moto/shamu/etc/fmas_eq.dat:system/etc/fmas_eq.dat:moto
     
     #qcom framework
     PRODUCT_COPY_FILES += \
