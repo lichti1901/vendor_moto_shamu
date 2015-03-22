@@ -22,7 +22,12 @@ LOCAL_STEM := vendor/moto/shamu/device-partial.mk
     fmas.spkr_sgain=0 \
     media.aac_51_output_enabled=true \
     persist.rcs.supported=0 \
-    persist.radio.sib16_support=1
+    persist.radio.sib16_support=1 \
+    drm.service.enabled=true \
+    persist.audio.dualmic.config=endfire \
+    persist.audio.fluence.voicecall=true \
+    persist.audio.fluence.voicerec=false \
+    persist.audio.fluence.speaker=false 
 
 # Prebuilt APKs
     PRODUCT_PACKAGES += \
